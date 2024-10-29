@@ -1,0 +1,123 @@
+/* General Styles */
+.rooms-page {
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  /* Hero Section */
+  .room-page-section{
+    background:  url('../../Images/home1.jpg') center/cover no-repeat;
+    height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 0 2rem;
+  }
+  .room-page-section h1 {
+    font-size: 3rem;
+  font-weight: bold;
+  animation: ease-in 2s;
+  }
+  .room-page-section p {
+    font-size: 1.2rem;
+    width:70%;
+    margin:auto;
+    margin-top: 1rem;
+  }
+  .room-page-content{
+    background-color:rgba(0, 0, 0, 0.3);
+  padding: 2%;
+  box-shadow: 9px 10px 7px 0px rgba(0,0,0,0.69);
+  -webkit-box-shadow: 9px 10px 7px 0px rgba(0,0,0,0.69);
+  -moz-box-shadow: 9px 10px 7px 0px rgba(0,0,0,0.69);
+  }
+  
+  /* Rooms Section */
+  .rooms-section {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  .rooms-section h2 {
+    font-size: 2.5em;
+    color: #444;
+    margin-bottom: 30px;
+  }
+  .rooms-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  .room-card {
+    background: #f8f8f8;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+  }
+  .room-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  .room-card h3 {
+    font-size: 1.5em;
+    color: #444;
+    margin: 10px 0;
+  }
+  .room-card p {
+    font-size: 1em;
+    color: #666;
+  }
+  .room-card .price {
+    font-size: 1.3em;
+    color: #ff6b6b;
+    font-weight: bold;
+    margin: 15px 0;
+  }
+  
+  /* Gallery Section */
+  .gallery-section {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  .gallery-section h2 {
+    font-size: 2.5em;
+    color: #444;
+    margin-bottom: 30px;
+  }
+  .gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  .gallery-container img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  .gallery-container img:hover {
+    transform: scale(1.05);
+  }
+  
+  .book-now-btn {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+  }
+  .book-now-btn:hover {
+    background-color: #ff4040;
+  }

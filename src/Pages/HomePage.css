@@ -1,0 +1,7 @@
+/* Ensure HomePage content stretches to fill space */
+.home-page {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 100vh; /* Ensure full height for the home page */
+  }

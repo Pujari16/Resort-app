@@ -1,0 +1,105 @@
+.ourstory-container {
+    gap:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* This allows the elements to stack on smaller screens */
+}
+
+.ourstory-image {
+    width: 40%; /* Reduce the image width for better responsiveness */
+    margin: 2%;
+    border-radius: 100%;
+}
+
+.ourstory-image img {
+    width: 95%; /* Ensure the image takes full width of its container */
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.ourstory-content {
+    flex: 1;
+    padding: 10px;
+    width: 70%; /* Reduced width for better responsiveness */
+}
+
+.ourstory-content h2 {
+    font-size: 32px; /* Slightly smaller heading size for better fit on smaller screens */
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.ourstory-content p {
+    font-size: 18px; /* Smaller font size for better readability */
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.learn-more-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .learn-more-btn:hover {
+    background-color: #0056b3;
+  }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .ourstory-container {
+        flex-direction: column; /* Stack content on smaller screens */
+        text-align: center; /* Center align text for better appearance */
+    }
+
+    .ourstory-image {
+        width: 70%; /* Increase width for better image visibility */
+         /* Full width image on very small screens */
+        margin: 2%; /* Center image with margin below */
+    }
+
+    .ourstory-content {
+        width: 90%; /* Full width content for smaller screens */
+        padding: 0 15px;
+    }
+
+    .ourstory-content h2 {
+        font-size: 24px; /* Smaller heading for small screens */
+    }
+
+    .ourstory-content p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ourstory-content {
+        padding:0;
+    }
+    .ourstory-content h2 {
+        font-size: 20px; /* Smaller heading for mobile screens */
+    }
+
+    .ourstory-content p {
+        font-size: 14px; /* Smaller text for mobile screens */
+    }
+
+    .ourstory-image {
+        width: 80%; /* Full width image on very small screens */
+        margin: 2%;
+    }
+
+    .ourstory-content {
+        width: 70%; /* Full width content for mobile */
+    }
+}

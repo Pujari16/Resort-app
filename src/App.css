@@ -1,0 +1,29 @@
+/* Ensure the body and html take full height */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Make the root container take full height */
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Make App fill the available space */
+.App {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Ensure main takes up the available space */
+main {
+  flex: 1;
+
+}
+
