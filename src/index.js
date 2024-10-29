@@ -1,11 +1,7 @@
+// index.js
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
-import { HashRouter as Router } from 'react-router-dom'; // Import HashRouter
+import App from './App'; // Ensure App contains the Router
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-    <Router>
-        <App />
-    </Router>
-);
+root.render(<App />);

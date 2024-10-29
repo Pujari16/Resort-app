@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './App.css';
-import { Routes, Route, HashRouter } from 'react-router-dom'; // Change to HashRouter
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import HomePage from './Pages/HomePage';
 import Navbar from './Components/Navbar/Navbar';
 import AboutUs from './Pages/AboutUs';
@@ -15,21 +15,26 @@ const App = () => {
 
   return (
     <div className='App'>
-      <HashRouter> {/* Use HashRouter instead of BrowserRouter */}
-        <Navbar />
-        <main>
-          <Routes>
-            <Route index element={<HomePage />} />
-            <Route path='/Home' element={<HomePage />} />
-            <Route path='/About' element={<AboutUs />} />
-            <Route path='/Contact' element={<ContactUs />} />
-            <Route path='/Room' element={<RoomPage />} />
-          </Routes>
-        </main>
-        <Footer />
-      </HashRouter>
+      <Navbar />
+      <main>
+        <Routes>
+          <Route index element={<HomePage />} />
+          <Route path='/Resort-app' element={<HomePage />} />
+          <Route path='/About' element={<AboutUs />} />
+          <Route path='/Contact' element={<ContactUs />} />
+          <Route path='/Room' element={<RoomPage />} />
+        </Routes>
+      </main>
+      <Footer />
     </div>
   );
 };
 
-export default App;
+// Wrap your App component only once in BrowserRouter
+const Root = () => (
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
+);
+
+export default Root;
